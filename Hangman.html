@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HangMan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('HangMan_gif.gif');
+            align-content: center;
+            color: white;
+        }
+
+
+        .mid {
+            display: inline-block;
+            position: absolute;
+            left: 550px;
+            top: 0px;
+            /* border: 2px solid red; */
+        }
+
+        .mid img {
+            width: 200px;
+            height: 130px;
+           
+        }
+
+
+        .mid div {
+            line-height: 17px;
+            font-size: 50px;
+            text-align: center;
+        }
+
+
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 18px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+
+        .btn {
+            margin: 5px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 7px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 180px 70px;
+            padding: 55px;
+            width: 33%;
+            border-radius: 25px;
+            display: inline-block;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 350px;
+            padding: 4px;
+            border: 2px solid black;
+            margin: 6px auto;
+            border-radius: 7px;
+            font-size: larger;
+        }
+
+        .container h1 {
+            text-align: center;
+            color: #fd0909;
+        }
+
+        .container button {
+            /* display: block; */
+            width: 90px;
+            margin: 8px 58px;
+            
+        }
+       
+
+        .description {
+            border: 2px solid white;
+            color: #fd0909;
+            margin: 180px 70px;
+            padding: 55px;
+            width: 33%;
+            border-radius: 25px;
+            display: inline-block;
+            vertical-align: 0px;
+            font-size: larger;
+
+        }
+
+        .description h2 {
+            text-align: center;
+        }
+
+        .frontier {
+
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <!-- mid box for logo -->
+        <div class="mid">
+            <img src="Hangman.png" alt="couldn't load the image">
+            <!-- <div>HangMan</div> -->
+        </div>
+
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="frontier">
+
+        <div class="container">
+            <h1>Player Details</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Name">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Contact No.">
+
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Your Email">
+
+                </div>
+                <button class="btn">Reset</button>
+                <button class="btn">Play</button>
+            </form>
+        </div>
+        <div class="description">
+            <h2>Description</h2>
+            <ul class="rules">
+                Feeling LONELY ?? Because we can't see you that way<br>
+                <li>A phrase or a movie will be displayed on the screen with blanks.You will have fixed no. of guesses. Try
+                    to guess it by entering letters</li>
+                <li>You may come across twists or challenges which you need to hurdle pass to not loose turns.</li><br>
+                Hit the button and PLAY with us
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
